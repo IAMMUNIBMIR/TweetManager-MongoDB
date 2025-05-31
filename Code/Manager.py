@@ -3,7 +3,8 @@ from datetime import datetime
 import os
 import time
 
-DATABASE_NAME = "ProjectDB"
+DATABASE_NAME = "ProjectTweets"
+
 
 def clear_screen():
     if os.name == 'nt':  # Check if the system is Windows (NT stands for New Technology, used in Windows)
@@ -18,7 +19,7 @@ def connect_to_db(port):
     try:
         client = MongoClient(f"mongodb://localhost:{port}/")
         print(f"Connected to MongoDB on port {port}")
-        db = client["DATABASE_NAME"]
+        db = client["ProjectTweets"]
         return db
     except Exception as e:
         print(f"Error connecting to MongoDB: {e}")

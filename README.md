@@ -15,7 +15,7 @@ Use this README to:
 
 ## Prerequisites
 
-1. **Python 3.x**
+1. **Python 3**
    Make sure Python 3 is installed and available on your system. 
 
 2. **MongoDB Community Edition**
